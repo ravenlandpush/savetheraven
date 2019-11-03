@@ -14,6 +14,12 @@ chmod +x getlostipfs.sh
 ./getlostipfs.sh
 ```
 
+# How it works
+
+Ravenland keep track of lost, missing or damaged IPFS files and provide a list via their bootstrap.ravenland.org ravencoin data pub. This script makes use of that and allows anybody running an IPFS node to attempt to synchronise these files individually and periodically retries them indefinitely. You can background the process
+```./getlostipfs.sh &```
+or run it within a screen
+```screen -S getlostipfs ./getlostipfs.sh```
 
 ## Missing Ravencoin IPFS Hashesbut not un-recoverable!
 ### there may still be DHT nodes with this file available
