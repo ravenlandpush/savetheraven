@@ -1,8 +1,24 @@
 # savetheraven
 This small project tracks and provides tools to help try and restore the 30 lost IPFS hashes on Ravencoin Network
 
-## Missing but not un-recoverable!
+# How to use
+
+You will need a user which has an .ipfs repository setup. To install IPFS get it here https://github.com/ipfs/go-ipfs
+
+Then clone this repository and simple run the shellscript to get started to recover the files, if they become available again the more people running this the more likely it is the data gets restored.
+
+```
+git clone https://github.com/ravenlandpush/savetheraven/
+cd savetheraven
+chmod +x getlostipfs.sh
+./getlostipfs.sh
+```
+
+
+## Missing Ravencoin IPFS Hashesbut not un-recoverable!
 ### there may still be DHT nodes with this file available
+The reason why these files are missing is because the person who added it to ipfs didn't wait long enough for other DHT nodes to sync it but may still be coming on and offline with the file available on the IPFS DHT Network.
+
 ```
 $ cat lost.ipfs.txt
 Qmd9ATprJaugzvXSProyn2twFdn4QzFzN3dwKYMbiPPd8d
