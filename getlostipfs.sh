@@ -14,7 +14,7 @@ wget https://bootstrap.ravenland.org/latest.lost.ipfs.txt -P ~/.lostipfs
 while IFS= read -r line; do
 echo "Retrieving lost ipfs hash $line"
 ipfs pin add $line --timeout 200s
-done < latest.lost.ipfs.txt
+done < ~/.lostipfs/latest.lost.ipfs.txt
 
 sleep 100
 done
